@@ -1,8 +1,10 @@
+"use client";
+
 import React from "react";
 import logo from "@/public/images/Screenshot 2023-05-16 003115.svg";
 import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
-import { BsCalendar } from "react-icons/bs";
+import { BsCalendar, BsArrowRight } from "react-icons/bs";
 import { MdLocationPin } from "react-icons/md";
 import { motion } from "framer-motion";
 
@@ -68,14 +70,50 @@ export default function Landing() {
         >
           <div
             id="landingcontainerinputrowcontainer"
-            className="flex justify-center"
+            className="flex justify-center items-center"
           >
             <input
               type="text"
               placeholder="Enter email for updates"
-              className="px-2 py-2 rounded-xl relative"
+              className="px-2 py-2 rounded-xl relative w-[75%]"
             />
-            <button className="absolute text-black">test</button>
+            <div className="flex justify-end items-center">
+              <motion.button
+                className="absolute justify-self-end items-center mr-2 bg-[#6f6fe8] w-[2.5rem] h-[25px] rounded-xl"
+                whileHover={{ width: "3rem" }}
+              >
+                <BsArrowRight
+                  style={{
+                    color: "white",
+                    backgroundColor: "#6f6fe8",
+                    width: "2.5rem",
+                    height: "25px",
+                    borderRadius: "10px",
+                  }}
+                />
+              </motion.button>
+            </div>
+          </div>
+          <div
+            id="landingcontainerinputrow2"
+            className="flex items-center justify-center gap-[1em]"
+          >
+            <motion.button
+              whileHover={{
+                scale: 1.1,
+                width: "32%",
+                backgroundColor: "#6f6fe8",
+              }}
+              className="border-[#6f6fe8] border-[1px] bg-transparent w-[30%] min-w-[8rem] rounded-[6px] flex items-center justify-center h-[30px] m-[10px]"
+            >
+              Devpost
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.1, width: "32%" }}
+              className="bg-[#6f6fe8] w-[30%] min-w-[8rem] rounded-[6px] flex items-center justify-center h-[30px] m-[10px]"
+            >
+              Photo Album
+            </motion.button>
           </div>
         </div>
       </div>
