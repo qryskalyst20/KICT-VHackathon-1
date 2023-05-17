@@ -47,7 +47,7 @@ export default function Landing() {
         id="landingcontainer"
         className="relative min-w-[300px] max-w-[600px]"
       >
-        <p className="text-[90px]">VHackathon 2023</p>
+        <p className="text-[70px]">VHackathon 2023</p>
         <p className="text-[24px] my-[1em]">
           VHackathon is the largest hackathon in Santa Cruz. Each year, we
           invite hundreds of students to develop solutions to real-world
