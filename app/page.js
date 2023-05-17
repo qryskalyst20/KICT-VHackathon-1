@@ -1,15 +1,17 @@
 import ShootingStars from "@/public/ShootingStars/ShootingStars";
-import NavigationBar from "@/public/components/NavigationBar";
-import Image from "next/image";
+import Landing from "@/public/components/Landing";
+// import NavigationBar from "@/public/components/NavigationBar";
 
 export default function Home() {
   return (
     <div>
-      <NavigationBar />
-      <p>test</p>
+      {/* <NavigationBar /> */}
       <div className="-z-10 overflow-hidden">
         <ShootingStars />
       </div>
+      <main className="relative z-2">
+        <Landing />
+      </main>
     </div>
   );
 }
