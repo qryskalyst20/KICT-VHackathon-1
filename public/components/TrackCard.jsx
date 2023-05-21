@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function TrackCard({ image, title, description }) {
   return (
     <motion.div
-      whileHover={{ scale: 1.05 }}
+      whileHover={{ scale: 1.05, margin: "15px" }}
       className="flex flex-col items-center bg-white rounded-[12px] h-[365px] w-[240px] m-[20px] p-[5px]"
     >
       <Image src={image} width={110} height={116} />

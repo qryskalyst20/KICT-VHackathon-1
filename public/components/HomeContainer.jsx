@@ -1,5 +1,7 @@
 import React from "react";
 import TrackCard from "./TrackCard";
+import Schedule from "./Schedule";
+import FAQComponent from "./faq/Faq";
 
 export default function HomeContainer() {
   return (
@@ -23,7 +25,7 @@ export default function HomeContainer() {
         <p className="text-center text-[28px] font-[600]">TECH CARE TRACKS</p>
         <div
           id="trackscontainer"
-          className="flex flex-wrap items-center justify-center mb-[5em]"
+          className="flex flex-wrap justify-center ml-[-10%] mb-[5em] w-[120%]"
         >
           <TrackCard
             title={"SUSTAINABILITY"}
@@ -55,7 +57,7 @@ export default function HomeContainer() {
         <p className="text-center text-[28px] font-[600]">CATEGORY PRIZES</p>
         <div
           id="trackscontainer"
-          className="flex flex-wrap items-center justify-center mb-[5em]"
+          className="flex flex-wrap justify-center ml-[-10%] mb-[5em] w-[120%]"
         >
           <TrackCard
             title={"BEGINNER"}
@@ -83,6 +85,14 @@ export default function HomeContainer() {
           />
         </div>
       </div>
+      <div
+        id="schedule"
+        className="w-full flex flex-col items-center justify-center"
+      >
+        <p className="text-center text-[28px] font-[600]">SCHEDULE</p>
+        <Schedule />
+      </div>
+      <FAQComponent />
     </div>
   );
 }
