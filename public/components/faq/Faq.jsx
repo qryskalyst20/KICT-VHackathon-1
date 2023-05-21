@@ -12,7 +12,7 @@ const FAQItem = (props) => {
 
   return (
     <button
-      className="bg-[#EFEFEF] flex flex-col text-left w-full p-3 rounded-lg"
+      className="bg-[#2a1d3e] shadow-[0_0_7px_#e7e7e7] flex flex-col text-left w-full p-3 rounded-lg"
       // style={{ backgroundColor: "#EFEFEF" }}
       onClick={() => setIsOpen((prev) => !prev)}
     >
