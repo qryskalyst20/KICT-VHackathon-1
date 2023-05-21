@@ -91,11 +91,26 @@ const FAQItem = (props) => {
 };
 
 export default function FAQComponent() {
+  const totalFAQs = defaultFAQs.length;
+  const midIndex = Math.ceil(totalFAQs / 2);
+
+  const leftFAQs = defaultFAQs.slice(0, midIndex);
+  const rightFAQs = defaultFAQs.slice(midIndex);
+
   return (
-    <div className="flex flex-col w-full p-5 justify-center items-center space-y-7">
-      {defaultFAQs.map((c, i) => (
-        <FAQItem key={i} {...c} />
-      ))}
+    <div className="flex flex-col w-full p-5 justify-center items-center">
+      <div className="flex">
+        <div className="flex flex-col space-y-3 w-1/2">
+          {leftFAQs.map((c, i) => (
+            <FAQItem key={i} {...c} />
+          ))}
+        </div>
+        <div className="flex flex-col space-y-3 w-1/2 ml-4">
+          {rightFAQs.map((c, i) => (
+            <FAQItem key={i + midIndex} {...c} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
