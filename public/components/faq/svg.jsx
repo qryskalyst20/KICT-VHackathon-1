@@ -15,8 +15,8 @@ export function More(props) {
         y1="10"
         x2="18"
         y2="10"
-        stroke="black"
-        strokeWidth="4"
+        stroke="#7dcfb6"
+        strokeWidth="2"
         strokeLinecap="round"
       />
       <line
@@ -24,8 +24,8 @@ export function More(props) {
         y1="18"
         x2="10"
         y2="2"
-        stroke="black"
-        strokeWidth="4"
+        stroke="#7dcfb6"
+        strokeWidth="2"
         strokeLinecap="round"
       />
     </motion.svg>
@@ -47,8 +47,8 @@ export function Less(props) {
         y1="10"
         x2="18"
         y2="10"
-        stroke="black"
-        strokeWidth="4"
+        stroke="#7dcfb6"
+        strokeWidth="2"
         strokeLinecap="round"
       />
     </motion.svg>

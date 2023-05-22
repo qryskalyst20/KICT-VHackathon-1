@@ -17,7 +17,7 @@ const FAQItem = (props) => {
       onClick={() => setIsOpen((prev) => !prev)}
     >
       <div className="flex justify-between items-center w-full">
-        <div className="text-2xl font-semibold">{props.question}</div>
+        <div className="text-lg">{props.question}</div>
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={isOpen ? "minus" : "plus"}
